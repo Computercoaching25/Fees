@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reminders & Notifications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Poppins',sans-serif; background:linear-gradient(120deg,#38ef7d,#11998e 100%); color:#222; min-height:100vh;}
+    header { text-align:center; color:#fff; padding:2em 0 1em 0;}
+    .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 18px; box-shadow: 0 8px 32px #11998e22; padding: 2em 1em;}
+    .actions { display: flex; justify-content: flex-end; margin-bottom: 1em;}
+    .actions button { background: #11998e; color: #fff; border: none; padding: 0.7em 1.3em; border-radius: 8px; font-weight: 600; cursor: pointer;}
+    .actions button:hover { background: #38ef7d; color: #222;}
+    table { width: 100%; border-collapse: collapse; margin-top: 0.5em;}
+    th, td { padding: 10px 8px; border-bottom: 1.5px solid #c8f7e7;}
+    th { background: #11998e; color: #fff;}
+    tr:nth-child(even) { background: #f5fff9;}
+    @media (max-width: 700px) {
+      .container { padding: 1em 0.2em;}
+      table, th, td { font-size: 0.97em;}
+      .actions { flex-direction: column; align-items: stretch;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reminders &amp; Notifications</h1>
+    <p>Automated alerts for fee dues, receipts, and announcements</p>
+  </header>
+  <div class="container">
+    <div class="actions">
+      <button>Send Reminder</button>
+      <button>New Announcement</button>
+    </div>
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>To</th>
+        <th>Message</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Fee Due</td>
+        <td>Priya Singh</td>
+        <td>Fee due on 30 May</td>
+        <td>2025-05-24</td>
+        <td style="color:green;">Sent</td>
+      </tr>
+      <tr>
+        <td>Receipt</td>
+        <td>Ravi Kumar</td>
+        <td>Payment received: ₹2,000</td>
+        <td>2025-05-24</td>
+        <td style="color:green;">Sent</td>
+      </tr>
+      <!-- More rows -->
+    </table>
+  </div>
+</body>
+</html>
